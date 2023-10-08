@@ -1,0 +1,463 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300&family=Quicksand:wght@500&display=swap");
+
+*,
+* ::after,
+* ::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:active,
+:hover,
+:focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+a:hover {
+  color: var(--primary-color) !important;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+/* =========== variable define  */
+
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: var(--bs-gray-dark);
+  font-family: "Karla", sans-serif;
+  font-family: "Quicksand", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--primary-font);
+  font-size: 100%;
+  font-weight: 400;
+}
+
+/* __________________________________
+costum scroller
+_____________________________________ */
+
+::-webkit-scrollbar {
+  width: 0.625rem;
+}
+::-webkit-scrollbar-track {
+  background: var(--white-color);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+
+/* * __________________________________
+cosstom css design
+/* _____________________________________ */
+
+h1 {
+  font-size: 3rem;
+  font-weight: 2000;
+  margin-top: 9rem;
+  margin-bottom: 3rem;
+  color: var(--bs-white);
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: var(--bs-orange);
+  line-height: 3rem;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  color: var(--secondary-color);
+  text-transform: capitalize;
+  font-size: var(--secondary-font);
+}
+h5 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--secondary-color);
+  text-transform: capitalize;
+  font-size: var(--secondary-font);
+}
+
+p {
+  font-size: 1rem;
+  color: var(--bs-dark);
+  font-weight: 400;
+  line-height: 1.75rem;
+  letter-spacing: 1px;
+}
+/* Target all links with class "custom-link" */
+a.custom-link {
+  color: rgb(0, 0, 0);
+}
+
+.main-btn {
+  display: inline-block;
+  /* padding: 0.625rem 1.875rem; */
+  line-height: 1.5625rem;
+  background-color: var(--primary-color);
+  border: 0.17 solid var(--primary-color);
+  color: var(--white-color);
+  font-size: 0.9867rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  box-shadow: 0px 2px 10px -1px rgb(0, 0, 0 / 19%);
+  -webkit-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+.white-btn {
+  /* padding: ; */
+  line-height: 25px;
+  background-color: var(--bs-light);
+  border: 0.1867 solid var(--bs-light);
+  color: var(--white-color);
+  font-weight: 600;
+  text-transform: capitalize;
+  box-shadow: 0px 2px 10px -1px rgb(0, 0, 0 / 19%);
+  -webkit-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+.main-btn :hover {
+  background: transparent;
+  color: var(--primary-color);
+}
+
+.white-btn :hover {
+  background: transparent;
+  color: red;
+  border-color: var(--primary-color);
+}
+
+.wrapper {
+  padding-top: 8.25rem;
+  padding-bottom: 8.25rem;
+}
+.text-contant {
+  width: 70%;
+  margin: auto;
+}
+
+.counter-section h2,
+.testimonial-section h2,
+.book-food-text h2 {
+  color: var(--white-color);
+}
+
+/* ======================================
+header design 
+======================================= */
+.navigation-wrap {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  z-index: 1000;
+  /* background-image: linear-gradient(to right, #555 #f565) !important; */
+  transition: all 0.3 ease-out;
+  -webkit-transition: all 0.3 ease-out;
+}
+
+.navigation-wrap .nav-item {
+  padding: 0.0625rem;
+  transition: all 200ms linear;
+}
+.navbar-toggler :focus {
+  outline: unset;
+  border: unset;
+  /* box-shadow: none; */
+}
+.nav-link {
+  font-size: 0.9348rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--bs-green);
+  letter-spacing: 1px;
+}
+/* ====================
+style scrol bar
+================== */
+
+.navigation-wrap .scroll-on {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--bs-dark);
+  box-shadow: 0.25rem 1.75rem 0 rgba(0, 0, 0, 0.9);
+  transition: all 0.15s ease-in-out 0s;
+}
+
+/* ====================
+ top banner
+================== */
+
+.oder-btn {
+  margin: 4px;
+  /* margin-left: 7.5rem; */
+  display: inline-block;
+  padding-left: 3rem;
+  padding: 0.625rem 10.875rem;
+  /* line-height: 1.5625rem; */
+  background-color: var(--bs-green);
+  border: 0.17 solid var(--bs-green);
+  color: var(--bs-light);
+  /* font-size: 0.9867rem; */
+  /* font-weight: 600; */
+  /* text-transform: capitalize; */
+  /* box-shadow: 0px 2px 10px -1px rgb(0, 0, 0 / 19%); */
+  /* -webkit-transition: all 0.4s ease-out 0s; */
+  /* -o-transition: all 0.4s ease-out 0s; */
+  /* -moz-transition: all 0.4s ease-out 0s; */
+  /* transition: all 0.4s ease-out 0s; */
+}
+.top-banner {
+  width: 100%;
+  background: url("../images/bg/bg\ 1.jpg") no-repeat center;
+  background-size: cover;
+  padding: 16.875rem 0 9, 376rem;
+}
+
+/* --------------------------------------
+.counter-section
+-------------------------------------- */
+
+.counter-section {
+  background: var(--bs-gray-dark);
+  padding: 2.5rem 0;
+}
+.counter-section p {
+  background: var(--bs-orange);
+  text-transform: uppercase;
+}
+
+/* ============================
+about sction 
+--============================== */
+
+.about-section {
+  background: var(--bs-light);
+}
+.about-section .card,
+.about-section .card .img {
+  border-radius: 2px;
+}
+.about-section .text-sec {
+  padding-left: 2rem;
+}
+
+.list {
+  background: none;
+}
+/* ======================== */
+/* food section  */
+/* -======================= */
+.food-type {
+  padding: 3rem;
+}
+.food-type ul li {
+  font-size: 1rem;
+  color: #000000;
+  line-height: 32px;
+  position: relative;
+  margin-left: 20px;
+  background: var(--bs-light);
+}
+.ab {
+  padding-left: 1rem;
+}
+
+.food-type ul li ::before {
+  position: absolute;
+  left: -2.1875rem;
+  color: var(--bs-orange);
+  font-size: 1.23rem;
+  font-family: "Font Awesome 5 Free";
+  contain: "\f00c";
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  font-weight: 900;
+}
+/* ===================== */
+/* story-sction? */
+/* ====================== */
+.story-section {
+  width: 100%;
+  height: 28.125rem;
+  background: url(../images/bg/bg-4.avif) no-repeat center;
+  background-size: cover;
+  text-align: center;
+  padding-top: 100px;
+}
+.story-section h2 {
+  color: var(--bs-orange);
+}
+.story-section p {
+  color: var(--bs-white);
+}
+
+/* ================= */
+/* explore-food */
+/* ================== */
+
+.explore-food .card {
+  border: none;
+  background: transparent;
+  border-radius: 0.9787rem;
+}
+.explore-food .card img {
+  border-radius: 0.9787rem;
+  object-fit: cover;
+}
+.explore-food .card span {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700px;
+  color: black;
+  padding-bottom: 1rem;
+  border-radius: 0.0625rem solid #eeee;
+}
+.explore-food .card span del {
+  color: var(--bs-gray-dark);
+  margin-left: 0.5rem;
+}
+.wrapper {
+  background-color: #343a4027;
+}
+/* --------------------- */
+/* slider section */
+/* =================== */
+
+.testimonial-section {
+  background: #4d4e4f3c;
+}
+.carousel-inner img {
+  border-radius: 50%;
+}
+
+.testimonial-section p {
+  color: #f8f9fa;
+  font-size: 15px;
+}
+.testimonial-section h5 {
+  color: #fd7e14;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+/* ============= */
+/* fAQ */
+/* ============= */
+
+.faq h4 span {
+  color: #fd7e14;
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+.book-food {
+  width: 100%;
+  height: 200px;
+  background: url(" ../images/effect/flat-lay-burgers-onion-rings_23-2148273039.avif");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 0 17.9125px;
+  padding: 4.375 0;
+  text-align: center;
+}
+/* .oo {
+  padding-top: 70px;
+} */
+/* .ss { */
+/* padding-top: 70px; */
+/* } */
+
+/* .book-food h2 { */
+/* color: var(--bs-secondary); */
+/* } */
+
+/* forem contrl */
+
+.newslatter {
+  width: 100%;
+  /* margin: 0 auto; */
+  background-color: aliceblue;
+}
+
+.newslatter .form-control {
+  height: 3.225rem;
+  padding: 0 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  border: none;
+  background: transparent;
+  border: 0 1875rem solid var(--bs-yellow);
+  color: var(--bs-gray-dark);
+}
+
+.footer {
+  background: var(--bs-warning);
+}
+.footer.ah {
+  color: wheat;
+  padding: 0 1.875rem;
+  word-spacing: 1px;
+}
+
+.ah {
+  color: var(--bs-light);
+  word-spacing: 1rem;
+  font-size: 1rem;
+}
+
+.footer .ah a :hover {
+  color: var(--bs-danger) !important;
+}
+
+.ag {
+  color: var(--bs-light);
+  word-spacing: 1rem;
+  font-size: 2rem;
+}

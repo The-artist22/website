@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>food website</title>
+    <!-- bootstrap cnd -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reponsive style.css" />
+  </head>
+  <body>
+    <!-- header design  -->
+    <header>
+      <nav class="navbar navbar-expand-lg navigation-wrap bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img src="images/de366bb1-b91c-4c36-ba8f-4c64d27dc4ec.jfif" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-stream navbar-toggler-icon"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#Home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#About ">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Explore food ">Explore food</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#Explore food"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  For more
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item nav-link" href="#Review">Review</a>
+                  </li>
+                  <li><a class="dropdown-item nav-link" href="#FAQ">FAQ</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <button class="main-btn">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    tabindex="-1"
+                    aria-disabled="false"
+                    >1230-4500-900</a
+                  >
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- <section - 1 top-banner -->
+    <section id="Home">
+      <div class="container-fluid px-0 top-banner">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-md-6">
+              <h1>Heart-healthy meals delivered by hand to your house.</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                fugit labore, mollitia exercitationem amet placeat voluptate
+                nostrum ut deserunt et? Quibusdam ea atque ratione labore omnis
+                laudantium accusantium in nisi.
+              </p>
+              <div class="mt-4">
+                  <a href="booked.html">
+                    <button class="btn btn-success mb-2" >oder now <i class="fas fa-shopping-basket ps-3"> </i>
+                    </button>
+                  </a>
+                </button>
+                <button class="btn btn-light mb-2 ms-lg-4 mt-lg-0 mt-4">
+                  oder now <i class="fas fa-angle-right ps-3"> </i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 2 counter    -->
+    <section id="counter">
+      <section class="counter-section">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+              <h2>
+                <span id="count"></span>
+              </h2>
+              <p>SAVING</p>
+            </div>
+            <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+              <h2>
+                <span id="count2"></span>
+              </h2>
+              <p>PHOTO</p>
+            </div>
+            <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+              <h2>
+                <span id="count3"></span>
+              </h2>
+              <p>ROCKET</p>
+            </div>
+            <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+              <h2>
+                <span id="count4"></span>
+              </h2>
+              <p>GLOBES</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- section-3 about -->
+    <section id="About">
+      <section class="about-section wrapper">
+        <div class="container">
+          <div class="row align-item-center">
+            <div class="col-lg-7 col-md-12 mb-lg-0 mb-5">
+              <div class="card border-0">
+                <img src="images/bg/bg 2.avif" class="img-fluid" />
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-12 text-sec">
+              <h2>
+                We pride oursalves on making real food the best ingredients
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati vel eum qui reprehenderit magnam! Possimus unde,
+                doloremque, incidunt corrupti at cupiditate quos numquam beatae
+                expedita ex nihil, aut mollitia iste.
+              </p>
+              <button class="btn btn-success">learn more</button>
+            </div>
+          </div>
+          <div class="container food-type">
+            <div class="row align-item-center">
+              <div class="col-lg-5 col-md-12 text-sec mb-lg-0 mb-5">
+                <h2>I cook with wine, sometimes I even add it to the food.</h2>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Similique voluptatibus a ut fugiat doloremque id, maxime
+                  accusantium perspiciatis eveniet atque quia deleniti sapiente.
+                  Cupiditate.
+                </p>
+                <ul class="py-3 bg-light">
+                  <li>necessita asperior, eius ipsa aut beatae conse</li>
+                  <li>pta eos odit accusantore ducimus officiis</li>
+                  <li>Aperiam quaera quuntur tempora deserunt, velit</li>
+                </ul>
+                <button class="btn btn-success mt-4">learn more</button>
+              </div>
+
+              <div class="col-lg-7 col-md-12">
+                <div class="card border-0">
+                  <img src="images/bg/bg-3.avif" class="img-fluid ab" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- section-3story -->
+    <section id="story">
+      <section class="story-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="text-content">
+                <h2>
+                  When a man stomatch is full it make no diffrence whether he is
+                  rich or poor
+                </h2>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Itaque repellendus cum molestiae quae, illo assumenda
+                  suscipit. At, quod tempora. Tenetur, eligendi. Libero
+                  dignissimos doloribus similique modi repellendus obcaecati
+                  voluptas alias?
+                </p>
+                <button class="btn btn-success mt-3">Read more</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- section-4 explore food -->
+    <section id="Explore food">
+      <div class="explore-food wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="text-contant text-center">
+                <h2>Explore our food</h2>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos
+                  optio ab assumenda provident illum? Eum vel illum rerum,
+                  numquam, voluptates accusantium quos similique unde laborum et
+                  inventore consectetur dignissimos quasi. Aliquid molestiae
+                  molestias nulla enim laudantium culpa. Ullam quos iusto
+                  temporibus labore! Unde ab tempora in molestiae minima
+                  quibusdam voluptas magnam velit autem? Iusto quaerat
+                  laudantium, excepturi accusantium obcaecati perspiciatis.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row pt-5">
+            <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+              <div class="card">
+                <img src="images/CARDS PIC/b1.avif" class="img-fluid" />
+                <div class="pt-3">
+                  <h4>Vagetable Sandwich</h4>
+                  <p>Time : 15-20 Mintues| Serves:1</p>
+                  <span>$5 <del>$10</del></span>
+                  <button class="btn btn-success  mt-4">Oder Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+              <div class="card">
+                <img src="images/CARDS PIC/B2.avif" class="img-fluid" />
+                <div class="pt-3">
+                  <h4>Vagetarian-Burger</h4>
+                  <p class="mb-lg-7">Time : 30-40 Mintues| Serves:1</p>
+                  <span>$10 <del>$15</del></span>
+                  <button class="btn btn-success mt-4">Oder Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+              <div class="card">
+                <img src="images/CARDS PIC/b3.avif" class="img-fluid" />
+                <div class="pt-3">
+                  <h4>BucatiniPasta</h4>
+                  <p>Time : 15-20 Mintues| Serves:1</p>
+                  <span>$20 <del>$25</del></span>
+                  <button class="btn btn-success mt-4">Oder Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section-5 testimonial -->
+    <section id="Review">
+      <div class="testimonial-section wrapper">
+        <div class="container text-center">
+          <div class="text-center pb-4">
+            <h2>Testimonial</h2>
+            <div class="row">
+              <div class="col-sm-12 col-lg-10 offset-lg-1">
+                <div
+                  id="carouselExampleDark"
+                  class="carousel carousel-dark slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-indicators">
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleDark"
+                      data-bs-slide-to="0"
+                      class="active"
+                      aria-current="true"
+                      aria-label="Slide 1"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleDark"
+                      data-bs-slide-to="1"
+                      aria-label="Slide 2"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleDark"
+                      data-bs-slide-to="2"
+                      aria-label="Slide 3"
+                    ></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                      <img
+                        src="images/silider/b1.avif"
+                        class="d-block w-100 img-fluid"
+                        alt="..."
+                      />
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Flon mask</h5>
+                        <p>
+                          Some representative placeholder content for the first
+                          slide.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                      <img
+                        src="images/silider/b2.avif"
+                        class="d-block w-100 img-fluid"
+                        alt="..."
+                      />
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Yoron Maxi</h5>
+                        <p>
+                          Some representative placeholder content for the second
+                          slide.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="images/silider/b3.avif"
+                        class="d-block w-100 img-fluid"
+                        alt="..."
+                      />
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Pyoton</h5>
+                        <p>
+                          Some representative placeholder content for the third
+                          slide.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section-6 faq -->
+    <section id="FAQ">
+      <div class="faq wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="text-center pb-4">
+              <h2>Frequently Asked Question</h2>
+            </div>
+          </div>
+          <div class="row pb-5">
+            <div class="col-sm-6 mb-4">
+              <h4><span>~</span> Is Can i oder your product online?</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem neque repudiandae quas quis commodi ipsa delectus,
+                totam qui voluptas quasi aliquam? Repellat sapiente repellendus
+                sit sequi cupiditate cumque. Rem, eum?
+              </p>
+            </div>
+            <div class="col-sm-6 mb-4">
+              <h4><span>~</span> Is Bread really fresh each day?</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem neque repudiandae quas quis commodi ipsa delectus,
+                totam qui voluptas quasi aliquam? Repellat sapiente repellendus
+                sit sequi cupiditate cumque. Rem, eum?
+              </p>
+            </div>
+            <div class="col-sm-6 mb-4">
+              <h4><span>~</span> Do you bake bread animal fat?</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem neque repudiandae quas quis commodi ipsa delectus,
+                totam qui voluptas quasi aliquam? Repellat sapiente repellendus
+                sit sequi cupiditate cumque. Rem, eum?
+              </p>
+            </div>
+            <div class="col-sm-6 mb-4">
+              <h4><span>~</span> When you are openig a shop near me ?</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem neque repudiandae quas quis commodi ipsa delectus,
+                totam qui voluptas quasi aliquam? Repellat sapiente repellendus
+                sit sequi cupiditate cumque. Rem, eum?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section-7 book-food -->
+    <section id="book-food">
+      <div class="book-food">
+        <div class="container book-food">
+          <div class="row">
+            <div class="col-lg-9 col-md-12">
+              <h2 class="oo pt-5">Baked fresh daily by bakers with passion.</h2>
+            </div>
+            <div class="col-lg-3 pt-5  col-md-12 mt-lg-0 mt-4">
+              <button class="btn btn-success ss">Learn more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section-8 newslatter -->
+    <section id="new-latter new bg-danger">
+      <div class="newslatter wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="sol-sm-12">
+              <div class="text-center text-contant pb-4">
+                <h2>Hurry up! Subscribe our newslatter and get 25% off</h2>
+                <p>
+                  Limited time offer for this month . no credit card requrid.
+                </p>
+              </div>
+              <form class="newlatter">
+                <div class="row">
+                  <div class="col-md-12 col-md-8 news">
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Email Address here  "
+                      class="form-control bg-dark inp"
+                    />
+                  </div>
+                  <div class="col-md-4 col-12">
+                    <button class="btn btn-success btn-oder" type="submit">Subscribe</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section-9 <footer  -->
+    <footer id="footer">
+      <div class="footer py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <a class="ah" href="">Registar </a>
+              <a class="ah" href="">forum </a>
+              <a class="ah" href="">Affiliate </a>
+              <a class="ah" href="">FAQ</a>
+              <div class="footer-social text-center">
+                <a class="ag" href=""><i class="fa-brands fa-facebook"></i></a>
+                <a class="ag" href=""><i class="fa-brands fa-youtube"></i></a>
+                <a class="ag" href=""><i class="fa-brands fa-x-twitter"></i></a>
+                <a class="ag" href=""><i class="fa-brands fa-dribbble"></i></a>
+                <a class="ag" href=""><i class="fa-brands fa-instagram"></i></a>
+                <a class="ag" href=""><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="footer-copy">
+                <div class="copy-right text-center pt-5">
+                  <p class="text-light">@ Made by Hammad zubair</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- js libraries -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <!-- own js file -->
+    <script src="js/app.js"></script>
+  </body>
+</html>
